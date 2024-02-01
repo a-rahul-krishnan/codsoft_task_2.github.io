@@ -1,0 +1,324 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Copperplate Gothic';
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding: 20px;
+    background-color: white;
+
+}
+.navbar #logo{
+    text-decoration: none;
+    margin: 5px;
+}
+#logo h1,h2{
+    display: inline;
+}
+#logo h1{
+    color: #A27B5C;
+}
+#logo h2{
+color: #735740;
+}
+.menu{
+    float: right;
+    margin-top: 0.5%;
+    margin-right: 2%;
+}
+.menu a{
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #735740;
+    font-size:large;
+}
+.menu a:hover{
+    color: #A27B5C;
+}
+.menu a:active{
+    color: #735740;
+}
+#home{
+    background:url(../assets/home-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-top: 68px;
+    display: inline-block;
+}
+.home-content{
+    margin-top:11%;
+    margin-left:6%;
+}
+.home-content h1{
+    font-size: 49px;
+}
+.home-content a{
+    text-decoration: none;
+    padding:20px;
+    background-color: #735740;
+    display:inline-block;
+    color: #DCD7C9;
+    font-weight: bold;
+    border-radius: 6%;
+    transition-duration: 5ms;
+    transition-timing-function: ease-in-out;    
+}
+.home-content a:hover{
+    background-color:#A27B5C;
+}
+.home-content a:active{
+    background-color:#735740;
+}
+#home img{
+    display:inline;
+    height: 360px;
+    width: 720px;
+    float:right;
+    margin-right: 6%;
+    animation: float 5s linear infinite;
+}
+/*@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-3.5rem);
+    }
+}*/
+#about{
+    background:url(../assets/about-bg.png) no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 110vh;
+    display: inline;
+
+}
+.about-content{
+    margin-left:6%;
+    margin-right: 6%;
+    text-align: justify;
+}
+.about-content h1{
+    font-size: 30px;
+    color: #735740;
+}
+.about-content img{
+    width:360px;
+}
+#services{
+    height: 100vh;
+}
+.services-content{
+    margin-top: 5%;
+text-align: center;
+}
+.services-content h1{
+    font-size: 30px;
+    color: #735740;
+}
+.services-content .box{
+    width:260px;
+    border:0.1px solid lightgrey;
+    display: inline-block;
+    margin: 0.3%;
+    transition-duration: 5ms;
+    box-shadow: 10px 10px 5px lightgrey;
+}
+.services-content .box:hover{
+    border:3px solid #A27B5C;
+    margin: 0.2%;
+}
+.services-content .box img{
+    width: 260px;
+    height: 300px;
+}
+.services-content .box a{
+    text-decoration: none;
+    padding:10px;
+    background-color: #735740;
+    display:inline-block;
+    color: #DCD7C9;
+    font-weight: bold;
+    border-radius: 6%;
+    transition-duration: 5ms;
+    transition-timing-function: ease-in-out;   
+    margin: 5%; 
+}
+.services-content .box a:hover{
+    background-color:#A27B5C;
+}
+
+.consultation{
+    height: 80vh;
+    border: 1px solid #ccc;
+    margin: 2%;
+    box-shadow: 10px 10px 5px lightgrey;
+}
+.consultation h1{
+    font-size: 30px;
+    color: #735740;
+    text-align: center; 
+}
+.consultation table{
+    margin: 4%;
+}
+.consultation td{
+    width: 60vw;
+}
+.consultation form {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    margin: auto;
+}
+
+.consultation label {
+    margin-bottom: 6px;
+}
+
+.consultation input {
+    padding: 7px;
+    margin-bottom: 6px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: none;
+
+}
+
+.consultation img{
+    width: 24vw;
+    display: inline;
+}
+
+.consultation .btn-schedule {
+    font-family: "Copperplate Gothic";
+    font-weight: bold;
+    font-size: medium;
+    background-color: #735740;
+    color: #DCD7C9;
+    padding: 1em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:0.3s ease;
+}
+
+.consultation .btn-schedule:hover {
+    background-color: #A27B5C;
+}
+
+
+#reviews{
+    height: 100vh;
+}
+.reviews-content{
+    margin-top: 5%;
+    text-align: center;
+}
+.reviews-content h1{
+    font-size: 30px;
+    color: #735740;
+}
+.reviews-content .box{
+    width:300px;
+    border:0.1px solid lightgrey;
+    display: inline-block;
+    margin: 0.3%;
+    transition-duration: 5ms;
+    box-shadow: 10px 10px 5px lightgrey;
+}
+
+.reviews-content .box img{
+    width: 300px;
+}
+
+
+#subs{
+    text-align: center;
+    height: 30vh;
+    background-image: linear-gradient(to left,#735740,#A27B5C);
+}
+#subs form div{
+    border: 2px solid white;
+    padding: 10px;
+    background:none;
+    border-radius:5rem;
+    width: 20%;
+    height: 5%;
+    display: inline;
+}
+#subs form{
+    margin-top:4%;
+    display:inline-block;
+}
+#subs form label{
+color: white;
+font-weight: bold;
+}
+#subs form h1{
+    color: white;
+}
+#subs input[type="email"]{
+    font-family: 'Copperplate Gothic';
+    background:none;
+    color: white;
+    border:none;
+    text-transform: none;
+}
+#subs input[type="submit"]{
+    font-family: 'Copperplate Gothic';
+    background:none;
+    color: black;
+    font-weight: bolder;
+    background: white;
+    margin: 2px;
+    border: none;
+    padding: 5px;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+footer{
+    margin-top:auto;
+    background-color: #2C3639;
+    color:white;
+}
+footer p{
+    text-align: center;
+}
+footer table{
+    margin: 5%;
+    margin-left: 17%;
+    border-spacing: px;
+}
+footer table th{
+    text-decoration: underline; 
+    width: 200px;
+}
+footer table #au{
+    width: 400px;
+}
+footer table,tr,td,th{
+    text-align: start;
+}
+
+footer a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
